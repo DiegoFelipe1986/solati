@@ -1,10 +1,17 @@
--- Crate Data Base
+-- Para este proyecto se debe crear previamente la base de datos con los scripts en el siguiente orden:
+-- 1. Crear base
+-- 2. Seleccionar Base de datos
+-- 3. Crear la tabla "Users"
+-- 4. Realizar el Insert para llenar la tabla creada
+
+-- 1. Create Data Base
 
 CREATE DATABASE UsersDB;
 
+-- 2. Selection DB
 USE UsersDB;
 
--- Create table Users
+-- 3. Create table Users
 CREATE TABLE Users (
     id INT PRIMARY KEY,
     name VARCHAR(255),
@@ -18,7 +25,7 @@ CREATE TABLE Users (
     lng DECIMAL(10, 6)
 );
 
--- Insert 10 users to table
+-- 4. Insert 10 users to table
 INSERT INTO Users (id, name, username, email, street, suite, city, zipcode, lat, lng)
 VALUES
 (1, 'Leanne Graham', 'Bret', 'Sincere@april.biz', 'Kulas Light', 'Apt. 556', 'Gwenborough', '92998-3874', -37.3159, 81.1496),

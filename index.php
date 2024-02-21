@@ -32,8 +32,10 @@ $usersArray = json_decode($users);
             </thead>
             <tbody>
             <?php
+                // Itera sobre el array de usuarios y genera una fila para cada uno
                 foreach ($usersArray as $user) {
                     echo "<tr>";
+                    // Imprime los datos de cada usuario en celdas de la tabla
                     echo "<td>{$user->id}</td>";
                     echo "<td>{$user->name}</td>";
                     echo "<td>{$user->username}</td>";
@@ -41,9 +43,10 @@ $usersArray = json_decode($users);
                     echo "<td>{$user->city}</td>";
                     echo "</tr>";
                 }
-            ?>
+                ?>
             </tbody>
         </table>
     </div>
 </body>
 </html>
+?>
